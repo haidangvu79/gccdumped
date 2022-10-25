@@ -1,6 +1,6 @@
 // executing gofast.c.out.dumped test 
-val k1_gofast.c.out.dumped: unit -> unit effect {barr, eamem, escape, exmem, rmem, rmemt, rreg, undef, wmv, wmvt, wreg,wmem}
-function k1_gofast.c.out.dumped() = {
+val k1_gofast.: unit -> unit effect {barr, eamem, escape, exmem, rmem, rmemt, rreg, undef, wmv, wmvt, wreg,wmem}
+function k1_gofast.() = {
 mI:mem_I = [||];
 mD:mem_D = [||];
 icount:int = 0;

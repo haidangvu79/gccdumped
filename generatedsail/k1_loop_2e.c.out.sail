@@ -1,6 +1,6 @@
 // executing loop_2e.c.out.dumped test 
-val k1_loop_2e.c.out.dumped: unit -> unit effect {barr, eamem, escape, exmem, rmem, rmemt, rreg, undef, wmv, wmvt, wreg,wmem}
-function k1_loop_2e.c.out.dumped() = {
+val k1_loop_2e.: unit -> unit effect {barr, eamem, escape, exmem, rmem, rmemt, rreg, undef, wmv, wmvt, wreg,wmem}
+function k1_loop_2e.() = {
 mI:mem_I = [||];
 mD:mem_D = [||];
 icount:int = 0;

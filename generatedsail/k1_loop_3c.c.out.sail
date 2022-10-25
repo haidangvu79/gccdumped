@@ -1,6 +1,6 @@
 // executing loop_3c.c.out.dumped test 
-val k1_loop_3c.c.out.dumped: unit -> unit effect {barr, eamem, escape, exmem, rmem, rmemt, rreg, undef, wmv, wmvt, wreg,wmem}
-function k1_loop_3c.c.out.dumped() = {
+val k1_loop_3c.: unit -> unit effect {barr, eamem, escape, exmem, rmem, rmemt, rreg, undef, wmv, wmvt, wreg,wmem}
+function k1_loop_3c.() = {
 mI:mem_I = [||];
 mD:mem_D = [||];
 icount:int = 0;

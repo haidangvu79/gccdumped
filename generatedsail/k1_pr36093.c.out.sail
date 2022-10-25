@@ -1,6 +1,6 @@
 // executing pr36093.c.out.dumped test 
-val k1_pr36093.c.out.dumped: unit -> unit effect {barr, eamem, escape, exmem, rmem, rmemt, rreg, undef, wmv, wmvt, wreg,wmem}
-function k1_pr36093.c.out.dumped() = {
+val k1_pr36093.: unit -> unit effect {barr, eamem, escape, exmem, rmem, rmemt, rreg, undef, wmv, wmvt, wreg,wmem}
+function k1_pr36093.() = {
 mI:mem_I = [||];
 mD:mem_D = [||];
 icount:int = 0;

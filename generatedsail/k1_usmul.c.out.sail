@@ -1,6 +1,6 @@
 // executing usmul.c.out.dumped test 
-val k1_usmul.c.out.dumped: unit -> unit effect {barr, eamem, escape, exmem, rmem, rmemt, rreg, undef, wmv, wmvt, wreg,wmem}
-function k1_usmul.c.out.dumped() = {
+val k1_usmul.: unit -> unit effect {barr, eamem, escape, exmem, rmem, rmemt, rreg, undef, wmv, wmvt, wreg,wmem}
+function k1_usmul.() = {
 mI:mem_I = [||];
 mD:mem_D = [||];
 icount:int = 0;

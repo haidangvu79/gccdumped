@@ -1,6 +1,6 @@
 // executing stkalign.c.out.dumped test 
-val k1_stkalign.c.out.dumped: unit -> unit effect {barr, eamem, escape, exmem, rmem, rmemt, rreg, undef, wmv, wmvt, wreg,wmem}
-function k1_stkalign.c.out.dumped() = {
+val k1_stkalign.: unit -> unit effect {barr, eamem, escape, exmem, rmem, rmemt, rreg, undef, wmv, wmvt, wreg,wmem}
+function k1_stkalign.() = {
 mI:mem_I = [||];
 mD:mem_D = [||];
 icount:int = 0;

@@ -1,6 +1,6 @@
 // executing 20040409_3w.c.out.dumped test 
-val k1_20040409_3w.c.out.dumped: unit -> unit effect {barr, eamem, escape, exmem, rmem, rmemt, rreg, undef, wmv, wmvt, wreg,wmem}
-function k1_20040409_3w.c.out.dumped() = {
+val k1_20040409_3w.: unit -> unit effect {barr, eamem, escape, exmem, rmem, rmemt, rreg, undef, wmv, wmvt, wreg,wmem}
+function k1_20040409_3w.() = {
 mI:mem_I = [||];
 mD:mem_D = [||];
 icount:int = 0;

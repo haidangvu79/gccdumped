@@ -1,6 +1,6 @@
 // executing arith_rand_ll.c.out.dumped test 
-val k1_arith_rand_ll.c.out.dumped: unit -> unit effect {barr, eamem, escape, exmem, rmem, rmemt, rreg, undef, wmv, wmvt, wreg,wmem}
-function k1_arith_rand_ll.c.out.dumped() = {
+val k1_arith_rand_ll.: unit -> unit effect {barr, eamem, escape, exmem, rmem, rmemt, rreg, undef, wmv, wmvt, wreg,wmem}
+function k1_arith_rand_ll.() = {
 mI:mem_I = [||];
 mD:mem_D = [||];
 icount:int = 0;

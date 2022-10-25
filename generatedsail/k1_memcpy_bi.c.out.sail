@@ -1,6 +1,6 @@
 // executing memcpy_bi.c.out.dumped test 
-val k1_memcpy_bi.c.out.dumped: unit -> unit effect {barr, eamem, escape, exmem, rmem, rmemt, rreg, undef, wmv, wmvt, wreg,wmem}
-function k1_memcpy_bi.c.out.dumped() = {
+val k1_memcpy_bi.: unit -> unit effect {barr, eamem, escape, exmem, rmem, rmemt, rreg, undef, wmv, wmvt, wreg,wmem}
+function k1_memcpy_bi.() = {
 mI:mem_I = [||];
 mD:mem_D = [||];
 icount:int = 0;

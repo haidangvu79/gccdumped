@@ -1,6 +1,6 @@
 // executing frame_address.c.out.dumped test 
-val k1_frame_address.c.out.dumped: unit -> unit effect {barr, eamem, escape, exmem, rmem, rmemt, rreg, undef, wmv, wmvt, wreg,wmem}
-function k1_frame_address.c.out.dumped() = {
+val k1_frame_address.: unit -> unit effect {barr, eamem, escape, exmem, rmem, rmemt, rreg, undef, wmv, wmvt, wreg,wmem}
+function k1_frame_address.() = {
 mI:mem_I = [||];
 mD:mem_D = [||];
 icount:int = 0;

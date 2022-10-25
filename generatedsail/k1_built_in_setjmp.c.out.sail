@@ -1,6 +1,6 @@
 // executing built_in_setjmp.c.out.dumped test 
-val k1_built_in_setjmp.c.out.dumped: unit -> unit effect {barr, eamem, escape, exmem, rmem, rmemt, rreg, undef, wmv, wmvt, wreg,wmem}
-function k1_built_in_setjmp.c.out.dumped() = {
+val k1_built_in_setjmp.: unit -> unit effect {barr, eamem, escape, exmem, rmem, rmemt, rreg, undef, wmv, wmvt, wreg,wmem}
+function k1_built_in_setjmp.() = {
 mI:mem_I = [||];
 mD:mem_D = [||];
 icount:int = 0;

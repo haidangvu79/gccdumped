@@ -1,6 +1,6 @@
 // executing builtin_constant.c.out.dumped test 
-val k1_builtin_constant.c.out.dumped: unit -> unit effect {barr, eamem, escape, exmem, rmem, rmemt, rreg, undef, wmv, wmvt, wreg,wmem}
-function k1_builtin_constant.c.out.dumped() = {
+val k1_builtin_constant.: unit -> unit effect {barr, eamem, escape, exmem, rmem, rmemt, rreg, undef, wmv, wmvt, wreg,wmem}
+function k1_builtin_constant.() = {
 mI:mem_I = [||];
 mD:mem_D = [||];
 icount:int = 0;
