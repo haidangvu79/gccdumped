@@ -10,7 +10,6 @@ wcount:int = 0;
 (mI,mD,icount,rcount,wcount) = init_k1_model();
 let _text_start: list_I = 
  [|
-     _12(0x...)        //none
  |];
 
 let func: list_I = 

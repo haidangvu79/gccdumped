@@ -8,7 +8,7 @@ rcount:int = 0;
 wcount:int = 0;
 //initialize platform
 (mI,mD,icount,rcount,wcount) = init_k1_model();
-let false: list_I = 
+let false_: list_I = 
  [|
      _32(0x60000000),        //make $r0 = 0 (0x0);;
      _32(0x0fd00000)        //ret ;;
@@ -60,7 +60,7 @@ count:int=0;
 //write program in instruction memory
 mI: mem_I = [||];
 num_instr: int = 0;
-(adr_end:bits(addr_bits),num_instr,mI)  = Write_ProgI(false, 0b00010110100000100000, num_instr, mI);
+(adr_end:bits(addr_bits),num_instr,mI)  = Write_ProgI(false_, 0b00010110100000100000, num_instr, mI);
 (adr_end_main:bits(addr_bits),num_instr,mI)  = Write_ProgI(main, 0b00010110100000101000, num_instr, mI);
 (adr_end:bits(addr_bits),num_instr,mI)  = Write_ProgI(abort, 0b00010110100010010000, num_instr, mI);
 //print_list_instr(mI);
