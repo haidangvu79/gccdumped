@@ -983,7 +983,7 @@ let abort: list_I =
      _32(0x00000000)        //errop ;;
  |];
 
-let exit: list_I = 
+let exit_: list_I = 
  [|
      _32(0x8fc400d0),        //get $r16 = $ra
      _32(0xe130f80c),        //addd $r12 = $r12, -32 (0xffffffe0)
@@ -1017,7 +1017,7 @@ num_instr: int = 0;
 (adr_end:bits(addr_bits),num_instr,mI)  = Write_ProgI(__divdi3, 0b00010111011101101000, num_instr, mI);
 (adr_end:bits(addr_bits),num_instr,mI)  = Write_ProgI(__moddi3, 0b00010111100000000000, num_instr, mI);
 (adr_end:bits(addr_bits),num_instr,mI)  = Write_ProgI(abort, 0b00010111100001111000, num_instr, mI);
-(adr_end:bits(addr_bits),num_instr,mI)  = Write_ProgI(exit, 0b00010111100010011000, num_instr, mI);
+(adr_end:bits(addr_bits),num_instr,mI)  = Write_ProgI(exit_, 0b00010111100010011000, num_instr, mI);
 //print_list_instr(mI);
 mD = Execute_Program(adr_start,adr_end_main,num_instr,mI,mD,icount,rcount,wcount);
 }
