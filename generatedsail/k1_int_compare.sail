@@ -64,7 +64,7 @@ let le: list_I =
      _32(0x0fd00000)        //ret ;;
  |];
 
-let true: list_I = 
+let true_: list_I = 
  [|
      _32(0x6130f80c),        //addd $r12 = $r12, -32 (0xffffffe0);;
      _32(0x0fc400d0),        //get $r16 = $ra;;
@@ -80,7 +80,7 @@ let true: list_I =
      _32(0x0fd00000)        //ret ;;
  |];
 
-let false: list_I = 
+let false_: list_I = 
  [|
      _32(0x6130f80c),        //addd $r12 = $r12, -32 (0xffffffe0);;
      _32(0x0fc400d0),        //get $r16 = $ra;;
@@ -399,8 +399,8 @@ num_instr: int = 0;
 (adr_end:bits(addr_bits),num_instr,mI)  = Write_ProgI(ge, 0b00010110100001001000, num_instr, mI);
 (adr_end:bits(addr_bits),num_instr,mI)  = Write_ProgI(lt, 0b00010110100001110000, num_instr, mI);
 (adr_end:bits(addr_bits),num_instr,mI)  = Write_ProgI(le, 0b00010110100010011000, num_instr, mI);
-(adr_end:bits(addr_bits),num_instr,mI)  = Write_ProgI(true, 0b00010110100011000000, num_instr, mI);
-(adr_end:bits(addr_bits),num_instr,mI)  = Write_ProgI(false, 0b00010110100011110000, num_instr, mI);
+(adr_end:bits(addr_bits),num_instr,mI)  = Write_ProgI(true_, 0b00010110100011000000, num_instr, mI);
+(adr_end:bits(addr_bits),num_instr,mI)  = Write_ProgI(false_, 0b00010110100011110000, num_instr, mI);
 (adr_end:bits(addr_bits),num_instr,mI)  = Write_ProgI(f, 0b00010110100100100000, num_instr, mI);
 (adr_end_main:bits(addr_bits),num_instr,mI)  = Write_ProgI(main, 0b00010110110111000000, num_instr, mI);
 (adr_end:bits(addr_bits),num_instr,mI)  = Write_ProgI(abort, 0b00010110110111011000, num_instr, mI);

@@ -18,7 +18,7 @@ let f: list_I =
      _32(0x0fd00000)        //ret ;;
  |];
 
-let Int: list_I = 
+let Int_: list_I = 
  [|
      _32(0x6130f80c),        //addd $r12 = $r12, -32 (0xffffffe0);;
      _32(0x0fc400d0),        //get $r16 = $ra;;
@@ -88,7 +88,7 @@ count:int=0;
 mI: mem_I = [||];
 num_instr: int = 0;
 (adr_end:bits(addr_bits),num_instr,mI)  = Write_ProgI(f, 0b00010110100000100000, num_instr, mI);
-(adr_end:bits(addr_bits),num_instr,mI)  = Write_ProgI(Int, 0b00010110100000111000, num_instr, mI);
+(adr_end:bits(addr_bits),num_instr,mI)  = Write_ProgI(Int_, 0b00010110100000111000, num_instr, mI);
 (adr_end_main:bits(addr_bits),num_instr,mI)  = Write_ProgI(main, 0b00010110100001101000, num_instr, mI);
 (adr_end:bits(addr_bits),num_instr,mI)  = Write_ProgI(abort, 0b00010110100010110000, num_instr, mI);
 (adr_end:bits(addr_bits),num_instr,mI)  = Write_ProgI(exit_, 0b00010110100011010000, num_instr, mI);
