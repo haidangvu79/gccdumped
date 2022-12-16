@@ -39,7 +39,7 @@ let doit: list_I =
      _32(0x0fc000d0),        //set $ra = $r16;;
      _32(0x6130080c),        //addd $r12 = $r12, 32 (0x20);;
      _32(0x0fd00000),        //ret ;;
-     _32(0x7f03f000)        //nop ;;
+     _32(0x7f03f000)         //nop ;;
  |];
 
 let main: list_I = 
@@ -55,7 +55,7 @@ let main: list_I =
      _32(0x3840060c),        //ld $r16 = 24 (0x18)[$r12];;
      _32(0x0fc000d0),        //set $ra = $r16;;
      _32(0x6130080c),        //addd $r12 = $r12, 32 (0x20);;
-     _32(0x0fd00000)        //ret ;;
+     _32(0x0fd00000)         //ret ;;
  |];
 
 let adr_start:bits(addr_bits) = 0b00010110100010001000; //0x16888
