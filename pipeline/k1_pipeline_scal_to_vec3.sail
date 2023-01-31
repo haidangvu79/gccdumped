@@ -1,4 +1,4 @@
-// executing pipeline scal_to_vec3 test 
+// executing pipeline scal_to_vec3.c.out.dumped test 
 val k1_pipeline_scal_to_vec3: unit -> unit effect {barr, eamem, escape, exmem, rmem, rmemt, rreg, undef, wmv, wmvt, wreg,wmem}
 function k1_pipeline_scal_to_vec3() = {
 mI:mem_I = [||];

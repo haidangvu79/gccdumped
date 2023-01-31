@@ -1,4 +1,4 @@
-// executing pipeline anon_1 test 
+// executing pipeline anon_1.c.out.dumped test 
 val k1_pipeline_anon_1: unit -> unit effect {barr, eamem, escape, exmem, rmem, rmemt, rreg, undef, wmv, wmvt, wreg,wmem}
 function k1_pipeline_anon_1() = {
 mI:mem_I = [||];

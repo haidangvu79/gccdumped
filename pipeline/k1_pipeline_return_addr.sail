@@ -1,4 +1,4 @@
-// executing pipeline return_addr test 
+// executing pipeline return_addr.c.out.dumped test 
 val k1_pipeline_return_addr: unit -> unit effect {barr, eamem, escape, exmem, rmem, rmemt, rreg, undef, wmv, wmvt, wreg,wmem}
 function k1_pipeline_return_addr() = {
 mI:mem_I = [||];

@@ -1,4 +1,4 @@
-// executing pipeline ipa_sra_1 test 
+// executing pipeline ipa_sra_1.c.out.dumped test 
 val k1_pipeline_ipa_sra_1: unit -> unit effect {barr, eamem, escape, exmem, rmem, rmemt, rreg, undef, wmv, wmvt, wreg,wmem}
 function k1_pipeline_ipa_sra_1() = {
 mI:mem_I = [||];

@@ -1,4 +1,4 @@
-// executing pipeline mayalias_2 test 
+// executing pipeline mayalias_2.c.out.dumped test 
 val k1_pipeline_mayalias_2: unit -> unit effect {barr, eamem, escape, exmem, rmem, rmemt, rreg, undef, wmv, wmvt, wreg,wmem}
 function k1_pipeline_mayalias_2() = {
 mI:mem_I = [||];

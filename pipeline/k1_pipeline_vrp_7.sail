@@ -1,4 +1,4 @@
-// executing pipeline vrp_7 test 
+// executing pipeline vrp_7.c.out.dumped test 
 val k1_pipeline_vrp_7: unit -> unit effect {barr, eamem, escape, exmem, rmem, rmemt, rreg, undef, wmv, wmvt, wreg,wmem}
 function k1_pipeline_vrp_7() = {
 mI:mem_I = [||];

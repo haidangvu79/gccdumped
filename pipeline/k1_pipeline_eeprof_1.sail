@@ -1,4 +1,4 @@
-// executing pipeline eeprof_1 test 
+// executing pipeline eeprof_1.c.out.dumped test 
 val k1_pipeline_eeprof_1: unit -> unit effect {barr, eamem, escape, exmem, rmem, rmemt, rreg, undef, wmv, wmvt, wreg,wmem}
 function k1_pipeline_eeprof_1() = {
 mI:mem_I = [||];
@@ -209,7 +209,7 @@ let __cyg_profile_func_enter: list_I =
      _32(0x7f03f000)        //nop ;;
  |];
 
-let __cyg_profile_func_exit: list_I = 
+let __cyg_profile_func_exit_: list_I = 
  [|
      _32(0x6130f80c),        //addd $r12 = $r12, -32 (0xffffffe0);;
      _32(0x2701060c),        //sd 24 (0x18)[$r12] = $r0;;
@@ -251,7 +251,7 @@ num_instr: int = 0;
 (adr_end:bits(addr_bits),num_instr,mI)  = Write_ProgI(nfoo, 0b00010110100101111000, num_instr, mI);
 (adr_end_main:bits(addr_bits),num_instr,mI)  = Write_ProgI(main, 0b00010110101010111000, num_instr, mI);
 (adr_end:bits(addr_bits),num_instr,mI)  = Write_ProgI(__cyg_profile_func_enter, 0b00010110110000000000, num_instr, mI);
-(adr_end:bits(addr_bits),num_instr,mI)  = Write_ProgI(__cyg_profile_func_exit, 0b00010110110001011000, num_instr, mI);
+(adr_end:bits(addr_bits),num_instr,mI)  = Write_ProgI(__cyg_profile_func_exit_, 0b00010110110001011000, num_instr, mI);
 (adr_end:bits(addr_bits),num_instr,mI)  = Write_ProgI(abort, 0b00010110110010110000, num_instr, mI);
 adr_end_main = adr_end_main - 4;
 //print_list_instr(mI);

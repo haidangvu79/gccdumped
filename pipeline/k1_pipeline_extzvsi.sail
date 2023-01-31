@@ -1,4 +1,4 @@
-// executing pipeline extzvsi test 
+// executing pipeline extzvsi.c.out.dumped test 
 val k1_pipeline_extzvsi: unit -> unit effect {barr, eamem, escape, exmem, rmem, rmemt, rreg, undef, wmv, wmvt, wreg,wmem}
 function k1_pipeline_extzvsi() = {
 mI:mem_I = [||];

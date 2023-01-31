@@ -1,4 +1,4 @@
-// executing pipeline compare_1 test 
+// executing pipeline compare_1.c.out.dumped test 
 val k1_pipeline_compare_1: unit -> unit effect {barr, eamem, escape, exmem, rmem, rmemt, rreg, undef, wmv, wmvt, wreg,wmem}
 function k1_pipeline_compare_1() = {
 mI:mem_I = [||];

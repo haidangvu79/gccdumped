@@ -1,4 +1,4 @@
-// executing pipeline loop_13 test 
+// executing pipeline loop_13.c.out.dumped test 
 val k1_pipeline_loop_13: unit -> unit effect {barr, eamem, escape, exmem, rmem, rmemt, rreg, undef, wmv, wmvt, wreg,wmem}
 function k1_pipeline_loop_13() = {
 mI:mem_I = [||];

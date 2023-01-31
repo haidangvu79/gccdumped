@@ -1,4 +1,4 @@
-// executing pipeline strlen_6 test 
+// executing pipeline strlen_6.c.out.dumped test 
 val k1_pipeline_strlen_6: unit -> unit effect {barr, eamem, escape, exmem, rmem, rmemt, rreg, undef, wmv, wmvt, wreg,wmem}
 function k1_pipeline_strlen_6() = {
 mI:mem_I = [||];

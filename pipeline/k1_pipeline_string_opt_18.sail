@@ -1,4 +1,4 @@
-// executing pipeline string_opt_18 test 
+// executing pipeline string_opt_18.c.out.dumped test 
 val k1_pipeline_string_opt_18: unit -> unit effect {barr, eamem, escape, exmem, rmem, rmemt, rreg, undef, wmv, wmvt, wreg,wmem}
 function k1_pipeline_string_opt_18() = {
 mI:mem_I = [||];

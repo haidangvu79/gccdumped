@@ -1,4 +1,4 @@
-// executing pipeline bswap_1 test 
+// executing pipeline bswap_1.c.out.dumped test 
 val k1_pipeline_bswap_1: unit -> unit effect {barr, eamem, escape, exmem, rmem, rmemt, rreg, undef, wmv, wmvt, wreg,wmem}
 function k1_pipeline_bswap_1() = {
 mI:mem_I = [||];

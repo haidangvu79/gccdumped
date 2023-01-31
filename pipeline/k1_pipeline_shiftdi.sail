@@ -1,4 +1,4 @@
-// executing pipeline shiftdi test 
+// executing pipeline shiftdi.c.out.dumped test 
 val k1_pipeline_shiftdi: unit -> unit effect {barr, eamem, escape, exmem, rmem, rmemt, rreg, undef, wmv, wmvt, wreg,wmem}
 function k1_pipeline_shiftdi() = {
 mI:mem_I = [||];

@@ -1,4 +1,4 @@
-// executing pipeline simd_5 test 
+// executing pipeline simd_5.c.out.dumped test 
 val k1_pipeline_simd_5: unit -> unit effect {barr, eamem, escape, exmem, rmem, rmemt, rreg, undef, wmv, wmvt, wreg,wmem}
 function k1_pipeline_simd_5() = {
 mI:mem_I = [||];

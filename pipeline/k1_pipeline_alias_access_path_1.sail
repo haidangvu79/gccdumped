@@ -1,4 +1,4 @@
-// executing pipeline alias_access_path_1 test 
+// executing pipeline alias_access_path_1.c.out.dumped test 
 val k1_pipeline_alias_access_path_1: unit -> unit effect {barr, eamem, escape, exmem, rmem, rmemt, rreg, undef, wmv, wmvt, wreg,wmem}
 function k1_pipeline_alias_access_path_1() = {
 mI:mem_I = [||];

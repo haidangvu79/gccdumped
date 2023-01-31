@@ -1,4 +1,4 @@
-// executing pipeline pushpop_macro test 
+// executing pipeline pushpop_macro.c.out.dumped test 
 val k1_pipeline_pushpop_macro: unit -> unit effect {barr, eamem, escape, exmem, rmem, rmemt, rreg, undef, wmv, wmvt, wreg,wmem}
 function k1_pipeline_pushpop_macro() = {
 mI:mem_I = [||];

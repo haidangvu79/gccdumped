@@ -1,4 +1,4 @@
-// executing pipeline 20040409_2w test 
+// executing pipeline 20040409_2w.c.out.dumped test 
 val k1_pipeline_20040409_2w: unit -> unit effect {barr, eamem, escape, exmem, rmem, rmemt, rreg, undef, wmv, wmvt, wreg,wmem}
 function k1_pipeline_20040409_2w() = {
 mI:mem_I = [||];

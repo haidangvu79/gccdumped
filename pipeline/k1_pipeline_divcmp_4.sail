@@ -1,4 +1,4 @@
-// executing pipeline divcmp_4 test 
+// executing pipeline divcmp_4.c.out.dumped test 
 val k1_pipeline_divcmp_4: unit -> unit effect {barr, eamem, escape, exmem, rmem, rmemt, rreg, undef, wmv, wmvt, wreg,wmem}
 function k1_pipeline_divcmp_4() = {
 mI:mem_I = [||];

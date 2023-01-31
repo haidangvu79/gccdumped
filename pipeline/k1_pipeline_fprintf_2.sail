@@ -1,4 +1,4 @@
-// executing pipeline fprintf_2 test 
+// executing pipeline fprintf_2.c.out.dumped test 
 val k1_pipeline_fprintf_2: unit -> unit effect {barr, eamem, escape, exmem, rmem, rmemt, rreg, undef, wmv, wmvt, wreg,wmem}
 function k1_pipeline_fprintf_2() = {
 mI:mem_I = [||];

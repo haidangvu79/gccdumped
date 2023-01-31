@@ -1,4 +1,4 @@
-// executing pipeline memcpy_bi test 
+// executing pipeline memcpy_bi.c.out.dumped test 
 val k1_pipeline_memcpy_bi: unit -> unit effect {barr, eamem, escape, exmem, rmem, rmemt, rreg, undef, wmv, wmvt, wreg,wmem}
 function k1_pipeline_memcpy_bi() = {
 mI:mem_I = [||];

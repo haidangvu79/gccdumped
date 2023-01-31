@@ -1,4 +1,4 @@
-// executing pipeline pr49419 test 
+// executing pipeline pr49419.c.out.dumped test 
 val k1_pipeline_pr49419: unit -> unit effect {barr, eamem, escape, exmem, rmem, rmemt, rreg, undef, wmv, wmvt, wreg,wmem}
 function k1_pipeline_pr49419() = {
 mI:mem_I = [||];

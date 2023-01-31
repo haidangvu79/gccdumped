@@ -1,4 +1,4 @@
-// executing pipeline frame_address test 
+// executing pipeline frame_address.c.out.dumped test 
 val k1_pipeline_frame_address: unit -> unit effect {barr, eamem, escape, exmem, rmem, rmemt, rreg, undef, wmv, wmvt, wreg,wmem}
 function k1_pipeline_frame_address() = {
 mI:mem_I = [||];

@@ -1,4 +1,4 @@
-// executing pipeline ssad_run test 
+// executing pipeline ssad_run.c.out.dumped test 
 val k1_pipeline_ssad_run: unit -> unit effect {barr, eamem, escape, exmem, rmem, rmemt, rreg, undef, wmv, wmvt, wreg,wmem}
 function k1_pipeline_ssad_run() = {
 mI:mem_I = [||];

@@ -1,4 +1,4 @@
-// executing pipeline mode_dependent_address test 
+// executing pipeline mode_dependent_address.c.out.dumped test 
 val k1_pipeline_mode_dependent_address: unit -> unit effect {barr, eamem, escape, exmem, rmem, rmemt, rreg, undef, wmv, wmvt, wreg,wmem}
 function k1_pipeline_mode_dependent_address() = {
 mI:mem_I = [||];

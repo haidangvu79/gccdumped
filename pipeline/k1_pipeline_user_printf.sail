@@ -1,4 +1,4 @@
-// executing pipeline user_printf test 
+// executing pipeline user_printf.c.out.dumped test 
 val k1_pipeline_user_printf: unit -> unit effect {barr, eamem, escape, exmem, rmem, rmemt, rreg, undef, wmv, wmvt, wreg,wmem}
 function k1_pipeline_user_printf() = {
 mI:mem_I = [||];

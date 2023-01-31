@@ -1,4 +1,4 @@
-// executing pipeline pr15296 test 
+// executing pipeline pr15296.c.out.dumped test 
 val k1_pipeline_pr15296: unit -> unit effect {barr, eamem, escape, exmem, rmem, rmemt, rreg, undef, wmv, wmvt, wreg,wmem}
 function k1_pipeline_pr15296() = {
 mI:mem_I = [||];
@@ -186,6 +186,22 @@ let abort: list_I =
 
 let exit_: list_I = 
  [|
+     _32(0x8fc400d0),        //get $r16 = $ra
+     _32(0xe130f80c),        //addd $r12 = $r12, -32 (0xffffffe0)
+     _32(0x60040000),        //make $r1 = 0 (0x0);;
+     _32(0xf838ffc0),        //zxwd $r14 = $r0
+     _32(0x2739040c),        //sd 16 (0x10)[$r12] = $r14;;
+     _32(0x98000161),        //call 17058 <__call_exitprocs>
+     _32(0xfa00000e),        //copyw $r0 = $r14
+     _32(0x2741060c),        //sd 24 (0x18)[$r12] = $r16;;
+     _96(0x00000000800000fce000f200),        //make $r0 = 259016 (0x3f3c8);;
+     _32(0x38000000),        //ld $r0 = 0 (0x0)[$r0];;
+     _32(0x38041600),        //ld $r1 = 88 (0x58)[$r0];;
+     _32(0x08800081),        //cb.deqz $r1? 16afc <exit+0x3c>;;
+     _32(0x0fdc0001),        //icall $r1;;
+     _32(0x98000827),        //call 18b98 <_exit>
+     _32(0x7a00000e),        //copyw $r0 = $r14;;
+     _32(0x00000000)        //errop ;;
  |];
 
 let adr_start:bits(addr_bits) = 0b00010110100110111000; //0x169b8

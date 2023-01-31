@@ -1,4 +1,4 @@
-// executing pipeline va_arg_23 test 
+// executing pipeline va_arg_23.c.out.dumped test 
 val k1_pipeline_va_arg_23: unit -> unit effect {barr, eamem, escape, exmem, rmem, rmemt, rreg, undef, wmv, wmvt, wreg,wmem}
 function k1_pipeline_va_arg_23() = {
 mI:mem_I = [||];
