@@ -8,7 +8,7 @@ rcount:int = 0;
 wcount:int = 0;
 //initialize platform
 (mI,mD,icount,rcount,wcount) = init_k1_model();
-let ref: list_I = 
+let ref_: list_I = 
  [|
      _32(0x6130f80c),        //addd $r12 = $r12, -32 (0xffffffe0);;
      _32(0x6100060c),        //addd $r0 = $r12, 24 (0x18);;
@@ -67,7 +67,7 @@ count:int=0;
 //write program in instruction memory
 mI: mem_I = [||];
 num_instr: int = 0;
-(adr_end:bits(addr_bits),num_instr,mI)  = Write_ProgI(ref, 0b00010110100000100000, num_instr, mI);
+(adr_end:bits(addr_bits),num_instr,mI)  = Write_ProgI(ref_, 0b00010110100000100000, num_instr, mI);
 (adr_end_main:bits(addr_bits),num_instr,mI)  = Write_ProgI(main, 0b00010110100001100000, num_instr, mI);
 (adr_end:bits(addr_bits),num_instr,mI)  = Write_ProgI(abort, 0b00010110100010110000, num_instr, mI);
 adr_end_main = adr_end_main - 4;

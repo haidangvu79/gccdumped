@@ -83,7 +83,7 @@ let aq: list_I =
      _32(0x0fd00000)        //ret ;;
  |];
 
-let as: list_I = 
+let as_: list_I = 
  [|
      _32(0x6130f80c),        //addd $r12 = $r12, -32 (0xffffffe0);;
      _32(0x2601060c),        //sw 24 (0x18)[$r12] = $r0;;
@@ -1035,7 +1035,7 @@ mI: mem_I = [||];
 num_instr: int = 0;
 (adr_end:bits(addr_bits),num_instr,mI)  = Write_ProgI(dummy, 0b00010110100000100000, num_instr, mI);
 (adr_end:bits(addr_bits),num_instr,mI)  = Write_ProgI(aq, 0b00010110100001001000, num_instr, mI);
-(adr_end:bits(addr_bits),num_instr,mI)  = Write_ProgI(as, 0b00010110100110101000, num_instr, mI);
+(adr_end:bits(addr_bits),num_instr,mI)  = Write_ProgI(as_, 0b00010110100110101000, num_instr, mI);
 (adr_end:bits(addr_bits),num_instr,mI)  = Write_ProgI(at, 0b00010110100111101000, num_instr, mI);
 (adr_end:bits(addr_bits),num_instr,mI)  = Write_ProgI(aw, 0b00010110101101111000, num_instr, mI);
 (adr_end_main:bits(addr_bits),num_instr,mI)  = Write_ProgI(main, 0b00010111100111111000, num_instr, mI);
